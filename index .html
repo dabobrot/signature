@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="width: 400px; font-size: 10pt; font-family: Arial, sans-serif; line-height:normal;" cellpadding="0" cellspacing="0" class="ng-scope">
+        <tbody>
+            <!-- ngIf: isAnyFieldEntered('firstName, lastName') --><tr ng-if="isAnyFieldEntered('firstName, lastName')" class="ng-scope">	
+                <td width="400" style="width:400px" colspan="2">
+                    <span style="font-size:12pt; font-family: Arial, sans-serif; font-weight: bold; color: #000000;" class="ng-binding">Dabobroto saha</span>
+                </td>
+            </tr><!-- end ngIf: isAnyFieldEntered('firstName, lastName') -->
+            <!-- ngIf: showField('title') --><tr ng-if="showField('title')" class="ng-scope">
+                <td width="400" style="width:400px; padding-top:5px" colspan="2">
+                    <!-- ngIf: showField('title') --><span ng-if="showField('title')" style="font-size:10pt; font-family: Arial, sans-serif; color: #888888; padding-bottom:5px;" class="ng-binding ng-scope">Web devoloper</span><!-- end ngIf: showField('title') -->
+                </td>
+            </tr><!-- end ngIf: showField('title') -->
+            <!-- ngIf: isAnyFieldEntered('facebookURL,linkedinURL,twitterURL,youtubeURL,instagramURL') --><tr ng-if="isAnyFieldEntered('facebookURL,linkedinURL,twitterURL,youtubeURL,instagramURL')" class="ng-scope">
+                <td width="400" style="width:400px; padding-top:10px" colspan="2">
+                    <!-- ngIf: showField('facebookURL') --><span ng-if="showField('facebookURL')" class="ng-scope"><a href="https://www.facebook.com/MyCompany" target="_blank"><img alt="Facebook icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/fb.png" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/fb.png"></a>&nbsp;</span><!-- end ngIf: showField('facebookURL') --><!-- ngIf: showField('linkedinURL') --><span ng-if="showField('linkedinURL')" class="ng-scope"><a href="https://www.linkedin.com/company/mycompany404" target="_blank"><img alt="LinkedIn icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/ln.png" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/ln.png"></a>&nbsp;</span><!-- end ngIf: showField('linkedinURL') --><!-- ngIf: showField('twitterURL') --><span ng-if="showField('twitterURL')" class="ng-scope"><a href="https://twitter.com/MyCompany404" target="_blank"><img alt="Twitter icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/tt.png" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/tt.png"></a>&nbsp;</span><!-- end ngIf: showField('twitterURL') --><!-- ngIf: showField('youtubeURL') --><span ng-if="showField('youtubeURL')" class="ng-scope"><a href="https://www.youtube.com/user/MyCompanyChannel" target="_blank"><img alt="Youtube icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/yt.png" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/yt.png"></a>&nbsp;</span><!-- end ngIf: showField('youtubeURL') --><!-- ngIf: showField('instagramURL') --><span ng-if="showField('instagramURL')" class="ng-scope"><a href="https://www.instagram.com/mycompany404/" target="_blank"><img alt="Instagram icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/it.png" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/it.png"></a></span><!-- end ngIf: showField('instagramURL') -->&nbsp;<!-- ngIf: showField('pinterestURL') --><span ng-if="showField('pinterestURL')" class="ng-scope"><a href="https://pinterest.com/mycompany404/" target="_blank"><img alt="Pinterest icon" border="0" width="19" height="19" style="border:0; height:19px; width:19px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/pt.png" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/pt.png"></a></span><!-- end ngIf: showField('pinterestURL') -->
+                </td>
+            </tr><!-- end ngIf: isAnyFieldEntered('facebookURL,linkedinURL,twitterURL,youtubeURL,instagramURL') -->
+            <tr>
+                <td width="400" style="width:400px;" colspan="2">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="padding-right:15px; border-right:1px solid #7bc3bb" width="162" valign="top">
+                    <!-- ngIf: showField('logo') --><span ng-if="showField('logo')" class="ng-scope">
+                        <!-- ngIf: showField('logoURL') --><a ng-if="showField('logoURL')" href="https://www.my-company.com/" target="_blank" class="ng-scope"><img width="162" border="0" alt="Logo" style="border:0;max-width:162px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/logo.png" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/logo.png"></a><!-- end ngIf: showField('logoURL') -->
+                        <!-- ngIf: !showField('logoURL') -->
+                    </span><!-- end ngIf: showField('logo') -->
+                </td>
+                
+                <td style="padding-left:15px; vertical-align: top;" valign="top">
+                    <!-- ngIf: showField('phone') --><span ng-if="showField('phone')" style="font-family: Arial, sans-serif; color:#000000;" class="ng-binding ng-scope"><span style="font-weight:bold;">T: </span>(800) 555-0199<br></span><!-- end ngIf: showField('phone') -->
+                    <!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')" style="font-family: Arial, sans-serif; color:#000000;" class="ng-binding ng-scope"><span style="font-weight:bold;">M: </span>(800) 555-0299<br></span><!-- end ngIf: showField('mobile') -->
+                    <!-- ngIf: showField('email') --><span ng-if="showField('email')" style="font-family: Arial, sans-serif; color:#000000;" class="ng-binding ng-scope"><span style="font-weight:bold;">E: </span>dabobroto@my-company.com<br></span><!-- end ngIf: showField('email') -->
+                    <!-- ngIf: showField('website') --><span ng-if="showField('website')" class="ng-scope"><span style="font-weight:bold;">W: </span><a href="http://www.my-company.com" target="_blank"><!-- ngIf: showField('website') --><span ng-if="showField('website')" style="font-family: Arial, sans-serif; color:#7bc3bb" class="ng-binding ng-scope">www.my-company.com</span><!-- end ngIf: showField('website') --></a></span><!-- end ngIf: showField('website') -->
+                    
+                </td>
+            </tr>
+            
+            <!-- ngIf: isAnyFieldEntered('company,address1,address2') --><tr ng-if="isAnyFieldEntered('company,address1,address2')" class="ng-scope">
+                <td width="400" style="width:400px;padding-top:15px;" colspan="2">
+                    <!-- ngIf: showField('company') --><span ng-if="showField('company')" style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;" class="ng-binding ng-scope">My Company</span><!-- end ngIf: showField('company') -->
+                    <!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;" class="ng-binding ng-scope"><!-- ngIf: showField('company') --><span ng-if="showField('company')" class="ng-scope"> | </span><!-- end ngIf: showField('company') -->Natore</span><!-- end ngIf: showField('address1') -->
+                    <!-- ngIf: showField('address2') --><span ng-if="showField('address2')" style="font-size: 10pt; font-family: Arial, sans-serif; color: #000000;" class="ng-binding ng-scope"><!-- ngIf: isAnyFieldEntered('company,address1') --><span ng-if="isAnyFieldEntered('company,address1')" class="ng-scope"> | </span><!-- end ngIf: isAnyFieldEntered('company,address1') -->6400,Bangladesh</span><!-- end ngIf: showField('address2') -->
+                </td>
+            </tr><!-- end ngIf: isAnyFieldEntered('company,address1,address2') -->
+            
+            <!-- ngIf: showField('banner') --><tr ng-if="showField('banner')" class="ng-scope">
+                <td width="400" style="width:400px;padding-top:15px;" colspan="2">
+                    <!-- ngIf: showField('bannerURL') --><a ng-if="showField('bannerURL')" href="https://www.codetwo.com/email-signatures/" target="_blank" rel="noopener" class="ng-scope"><img border="0" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/banner.png" alt="Banner" style="max-width:400px; height:auto; border:0;" src="https://www.mail-signatures.com/signature-generator/img/templates/bot-clock/banner.png"></a><!-- end ngIf: showField('bannerURL') --><!-- ngIf: !showField('bannerURL') -->
+                </td>
+            </tr><!-- end ngIf: showField('banner') -->
+
+            <br>
+            <table style="width: 514px; font-size: 11pt; font-family: Arial, sans-serif;" cellpadding="0" cellspacing="0" border="0" class="ng-scope">
+                <tbody>
+                 <tr>
+                    <td style="width:104px; padding-top: 3px;" width="104">
+                        <!-- ngIf: showField('bannerURL') --><a ng-if="showField('bannerURL')" href="https://www.codetwo.com/email-signatures/" target="_blank" rel="noopener" class="ng-scope">
+                            <img border="0" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/banner.png" alt="Banner" width="84" style="width:84px; height:auto; border:0;" src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/banner.png">
+                        </a><!-- end ngIf: showField('bannerURL') -->
+                        <!-- ngIf: !showField('bannerURL') -->
+                    </td>
+                 
+                    <td style="width:410px;" width="410">
+                        <span style="font-family: Arial, sans-serif; color:#784c3f; font-weight: bold; font-size: 12pt; line-height: 23px;" class="ng-binding">Dabobroto saha
+                            <!-- ngIf: showField('title') --><span ng-if="showField('title')" style="font-family: Arial, sans-serif; color:#1b1613; font-weight: bold;font-size: 12pt; line-height: 23px;" class="ng-scope"> | </span><!-- end ngIf: showField('title') -->
+                        </span>
+                        <!-- ngIf: showField('title') --><span ng-if="showField('title')" style="font-family: Arial, sans-serif; color:#1b1613;font-size: 12pt; line-height: 23px;" class="ng-binding ng-scope">Sales &amp; Marketing Director</span><!-- end ngIf: showField('title') -->
+                        
+                        <table style="width: 410px;" cellspacing="0" cellpadding="0">
+                            <tbody><tr>
+                                <td colspan="3" style="height: 20px;"></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 200px; border-right: 1px solid #1b1613;font-size: 10pt; line-height: 15px;">
+                                    <!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')" style="font-size: 10pt; line-height: 15px; color:#8a8a8a; font-family: Arial, sans-serif; padding: 0px; margin: 0px;" class="ng-binding ng-scope">m: +8801705840558</span><!-- end ngIf: showField('mobile') -->
+                                    <!-- ngIf: showField('phone') --><span ng-if="showField('phone')" style="font-size: 10pt;line-height: 15px; color:#8a8a8a; font-family: Arial, sans-serif;padding: 0px; margin: 0px;" class="ng-binding ng-scope"><!-- ngIf: isAnyFieldEntered('mobile') --><span ng-if="isAnyFieldEntered('mobile')" style="font-size: 10pt;line-height: 15px;" class="ng-scope"><br></span><!-- end ngIf: isAnyFieldEntered('mobile') -->t: +8801742557725</span><!-- end ngIf: showField('phone') -->
+                                    <!-- ngIf: showField('email') --><span ng-if="showField('email')" style="font-size: 10pt;line-height: 15px; color:#8a8a8a; font-family: Arial, sans-serif;padding: 0px; margin: 0px;" class="ng-scope"><!-- ngIf: isAnyFieldEntered('mobile,phone') --><span ng-if="isAnyFieldEntered('mobile,phone')" style="font-size: 10pt;line-height: 15px;" class="ng-scope"><br></span><!-- end ngIf: isAnyFieldEntered('mobile,phone') -->m: <a href="mailto:adi.doe@my-company.com" style="font-size: 10pt;line-height: 15px; color:#8a8a8a; font-family: Arial, sans-serif;padding: 0px; margin: 0px; text-decoration: none"><span style="font-size: 10pt;line-height: 15px; color:#8a8a8a; font-family: Arial, sans-serif; text-decoration: none" class="ng-binding">adi.doe@my-company.com</span></a></span><!-- end ngIf: showField('email') -->
+                                </td>
+                                <td style="width: 20px;height: 45px; "></td>
+                                <td style="width: 190px; font-size: 10pt; line-height: 15px;">
+                                    <!-- ngIf: showField('company') --><span ng-if="showField('company')" style="font-family: Arial, sans-serif; color:#784c3f;font-size: 10pt; line-height: 15px; padding: 0px; margin: 0px; font-weight: bold;" class="ng-binding ng-scope">My Company</span><!-- end ngIf: showField('company') -->
+                                    <!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size: 10pt; line-height: 15px; font-family: Arial, sans-serif; color: #8a8a8a;padding: 0px; margin: 0px;" class="ng-binding ng-scope"><!-- ngIf: showField('company') --><span ng-if="showField('company')" class="ng-scope"><br></span><!-- end ngIf: showField('company') -->Dhaka<!-- ngIf: showField('address2') --><span ng-if="showField('address2')" style="font-size: 10pt; line-height: 15px; font-family: Arial, sans-serif; color: #8a8a8a;" class="ng-scope">,</span><!-- end ngIf: showField('address2') --></span><!-- end ngIf: showField('address1') -->
+                                    <!-- ngIf: showField('address2') --><span ng-if="showField('address2')" style="font-size: 10pt; line-height: 15px; font-family: Arial, sans-serif; color: #8a8a8a;padding: 0px; margin: 0px;" class="ng-binding ng-scope">Bangldesh</span><!-- end ngIf: showField('address2') -->
+                                    
+                                </td>                
+                            </tr>
+                            <tr>
+                                <td style="border-right: 1px solid #1b1613; padding-top: 13px;">
+                                    <p style="margin-bottom: 0px;"><span style="display:inline-block; height:18px;"><!-- ngIf: showField('facebookURL') --><span ng-if="showField('facebookURL')" class="ng-scope"><a href="https://www.facebook.com/MyCompany" target="_blank"><img alt="Facebook icon" border="0" width="18" height="18" style="border:0; height:18px; width:18px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/fb.png" src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/fb.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('facebookURL') --><!-- ngIf: showField('linkedinURL') --><span ng-if="showField('linkedinURL')" class="ng-scope"><a href="https://www.linkedin.com/company/mycompany404" target="_blank"><img alt="LinkedIn icon" border="0" width="18" height="18" style="border:0; height:18px; width:18px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/ln.png" src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/ln.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('linkedinURL') --><!-- ngIf: showField('twitterURL') --><span ng-if="showField('twitterURL')" class="ng-scope"><a href="https://twitter.com/MyCompany404" target="_blank"><img alt="Twitter icon" border="0" width="18" height="18" style="border:0; height:18px; width:18px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/tt.png" src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/tt.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('twitterURL') --><!-- ngIf: showField('youtubeURL') --><span ng-if="showField('youtubeURL')" class="ng-scope"><a href="https://www.youtube.com/user/MyCompanyChannel" target="_blank"><img alt="Youtube icon" border="0" width="18" height="18" style="border:0; height:18px; width:18px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/yt.png" src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/yt.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('youtubeURL') --><!-- ngIf: showField('instagramURL') --><span ng-if="showField('instagramURL')" class="ng-scope"><a href="https://www.instagram.com/mycompany404/" target="_blank"><img alt="Instagram icon" border="0" width="18" height="18" style="border:0; height:18px; width:18px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/it.png" src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/it.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('instagramURL') --><!-- ngIf: showField('pinterestURL') --><span ng-if="showField('pinterestURL')" class="ng-scope"><a href="https://pinterest.com/mycompany404/" target="_blank"><img alt="Pinterest icon" border="0" width="18" height="18" style="border:0; height:18px; width:18px" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/pt.png" src="https://www.mail-signatures.com/signature-generator/img/templates/vertical-style/pt.png"></a></span><!-- end ngIf: showField('pinterestURL') --></span></p>
+                                </td>
+                                <td></td>
+                                <td style="padding-top: 10px;">
+                                    <!-- ngIf: showField('website') --><span ng-if="showField('website')" style="font-family: Arial, sans-serif; color:#784c3f;font-size: 10pt; margin-bottom: 0px;" class="ng-scope">
+                                        <a href="http://www.my-company.com" target="_blank" style="text-decoration:none; line-height: 19px;"><span style="font-family:Arial, sans-serif; color:#784c3f; text-decoration: none;" class="ng-binding">www.my-company.com</span></a>
+                                    </span><!-- end ngIf: showField('website') -->
+                                </td>
+                            </tr>
+                            <!-- ngIf: showField('disclaimer') -->
+                            <!-- ngIf: showField('disclaimer') -->
+                        </tbody></table>
+                    </td>
+                 </tr> 
+                 
+                </tbody>
+                </table>
+            
+        </tbody>
+        </table>
+
+        <br>
+        <div ng-if="$ctrl.hasLayoutOrLayoutPreview() || $ctrl.isThingShown('loading_preview_cover')" ng-style="$ctrl.preview_dimensions_style_attr()" class="ng-scope">
+
+            <!-- ngIf: $ctrl.onFreeBCPlan && !$ctrl.showLayoutPreviewOverlay() -->
+      
+            <!--<div layout="column" class="ra-padding-triple ra-theme-1 lay-relative lay-height-full lay-width-full">-->
+            <div layout="column" class="ra-padding-triple ra-theme-1 ra-overflow-auto lay-relative lay-height-full lay-width-full layout-column">
+      
+              <div ng-show="$ctrl.showOptionButtons()" class="zs-click-to-edit-msg " aria-hidden="false"></div>
+      
+              <div ng-show="$ctrl.isThingShown" class="ra-theme-1 ra-padding-triple lay-cover-siblings zs-preview-loading-cover ng-hide layout-align-center-center layout-row" layout="" layout-align="center center" aria-hidden="true">
+                <img ng-src="https://gimm.io/assets/loading-icon-dark-4c6a6e2df6140561c8de66576dd2d85eca7743a66a23a4693b8641fb265b7baf.svg" width="100" height="100" alt="Loading Preview" src="https://gimm.io/assets/loading-icon-dark-4c6a6e2df6140561c8de66576dd2d85eca7743a66a23a4693b8641fb265b7baf.svg">
+              </div>
+      
+              <!-- ngIf: !$ctrl.isThingShown('loading_preview_cover') --><div ng-if="!$ctrl.isThingShown" class="ng-scope">
+                <!-- Signature Compiler -->
+                <table ng-attr-style="{{$ctrl.outerTableStyle()}}" id="zs-output-sig" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse; width:625px;">
+                  <tbody>
+                    <!-- ngRepeat: table in $ctrl.tables --><tr ng-repeat="table in $ctrl.tables" class="zs-1 zs-10" style="">
+                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                          <tbody>
+                            <tr>
+                              <!-- LOGO SECTION and vertical section borders -->
+                              <!-- ngRepeat: logoSection in table.logoSections -->
+                              <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                  <tbody>
+                                    <!-- ngRepeat: row in table.rows --><tr ng-repeat="row in table.rows" class="ng-scope">
+                                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                        <!-- EACH ROW -->
+                                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                          <tbody>
+                                            <tr>
+                                              <!-- EACH SECTION and vertical section borders -->
+                                              <!-- ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections -->
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr><!-- end ngRepeat: row in table.rows -->
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr><!-- end ngRepeat: table in $ctrl.tables --><tr ng-repeat="table in $ctrl.tables" class="zs-1 zs-11" style="">
+                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                          <tbody>
+                            <tr>
+                              <!-- LOGO SECTION and vertical section borders -->
+                              <!-- ngRepeat: logoSection in table.logoSections --><!-- ngIf: $ctrl.showSection(logoSection) --><td ng-repeat="logoSection in table.logoSections" ng-attr-style="{{$ctrl.tdStyle(logoSection)}}" ng-if="$ctrl.showSection(logoSection)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'section' + logoSection.section.section_area)}" width="153" ng-click="$ctrl.goToVerticalSection(logoSection)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+                                <!-- ngIf: $ctrl.sectionIsntSpacer(logoSection) --><table ng-attr-style="{{$ctrl.tableStyle()}}" ng-if="$ctrl.sectionIsntSpacer(logoSection)" border="0" cellpadding="0" cellspacing="0" class="ng-scope" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                  <tbody>
+                                    <!-- FIRST FIELD in vertical sections and horizontal field borders -->
+                                    <!-- ngIf: $ctrl.showFieldInColumn(logoSection, logoSection.fields[0]) --><tr ng-if="$ctrl.showFieldInColumn(logoSection, logoSection.fields[0])" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + logoSection.fields[0].area)}" ng-mouseover="$ctrl.highlightPreviewField(logoSection.fields[0])" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(logoSection.fields[0], logoSection)" class="ng-scope" role="button" tabindex="0" style="">
+                                      <td ng-attr-style="{{$ctrl.tdStyle(logoSection.fields[0])}}" style="border-collapse:collapse;line-height:0px;padding: 0px !important;">
+                                        <!-- IMAGE FIELDS -->
+                                        <!-- ngIf: logoSection.fields[0].category == 'image' --><zs-remove ng-if="logoSection.fields[0].category == 'image'" class="ng-scope">
+                                          <!-- without hyperlink -->
+                                          <!-- ngIf: logoSection.fields[0].category == 'image' && !logoSection.fields[0].hyperlink --><img ng-if="logoSection.fields[0].category == 'image' &amp;&amp; !logoSection.fields[0].hyperlink" ng-src="https://img2.gimm.io/450d2d68-ce64-4bdc-9e80-ca903e6236a4/img.png" height="153" width="153" alt="" border="0" ng-attr-style="{{$ctrl.changeImageShape(logoSection.fields[0])}}" class="ng-scope" src="https://img2.gimm.io/450d2d68-ce64-4bdc-9e80-ca903e6236a4/img.png" style=""><!-- end ngIf: logoSection.fields[0].category == 'image' && !logoSection.fields[0].hyperlink -->
+                                          <!-- with hyperlink -->
+                                          <!-- ngIf: logoSection.fields[0].category == 'image' && logoSection.fields[0].hyperlink -->
+                                        </zs-remove><!-- end ngIf: logoSection.fields[0].category == 'image' -->
+                                      </td>
+                                    </tr><!-- end ngIf: $ctrl.showFieldInColumn(logoSection, logoSection.fields[0]) -->
+                                    <!-- SOCIAL FIELDS and spacers in horizontal sections -->
+                                    <!-- ngIf: logoSection.section.in_a_row -->
+                                    <!-- section bottom padding -->
+                                    <!-- ngIf: logoSection.section.border_padding > 0 -->
+                                    <!-- section bottom border -->
+                                    <!-- ngIf: logoSection.section.border_width > 0 -->
+                                    <!-- section bottom margin -->
+                                    <!-- ngIf: logoSection.section.border_margin > 0 && logoSection.section.border_width > 0 -->
+                                  </tbody>
+                                </table><!-- end ngIf: $ctrl.sectionIsntSpacer(logoSection) -->
+                              </td><!-- end ngIf: $ctrl.showSection(logoSection) --><!-- end ngRepeat: logoSection in table.logoSections --><!-- ngIf: $ctrl.showSection(logoSection) --><td ng-repeat="logoSection in table.logoSections" ng-attr-style="{{$ctrl.tdStyle(logoSection)}}" ng-if="$ctrl.showSection(logoSection)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'section' + logoSection.section.section_area)}" width="14" ng-click="$ctrl.goToVerticalSection(logoSection)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="border-collapse:collapse;padding-right: 14px;width: 14px;">
+                                <!-- ngIf: $ctrl.sectionIsntSpacer(logoSection) -->
+                              </td><!-- end ngIf: $ctrl.showSection(logoSection) --><!-- end ngRepeat: logoSection in table.logoSections --><!-- ngIf: $ctrl.showSection(logoSection) --><!-- end ngRepeat: logoSection in table.logoSections --><!-- ngIf: $ctrl.showSection(logoSection) --><!-- end ngRepeat: logoSection in table.logoSections -->
+                              <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                  <tbody>
+                                    <!-- ngRepeat: row in table.rows --><tr ng-repeat="row in table.rows" class="ng-scope">
+                                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                        <!-- EACH ROW -->
+                                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                          <tbody>
+                                            <tr>
+                                              <!-- EACH SECTION and vertical section borders -->
+                                              <!-- ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><td ng-repeat="section in row.sections" ng-attr-style="{{$ctrl.tdStyle(section)}}" ng-if="$ctrl.showSection(section)" ng-mouseover="$ctrl.highlightSectionSpacer(section)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'section' + section.style.section_area)}" ng-click="$ctrl.goToVerticalSection(section)" class="ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+                                                <!-- ngIf: $ctrl.sectionIsntSpacer(section) --><table ng-attr-style="{{$ctrl.tableStyle()}}" ng-if="$ctrl.sectionIsntSpacer(section)" border="0" cellpadding="0" cellspacing="0" class="ng-scope" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                                  <tbody>
+                                                    <!-- EACH FIELD in vertical sections and horizontal field borders -->
+                                                    <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                    <!-- TEXT & SOCIAL FIELDS in horizontal sections -->
+                                                    <!-- ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) --><tr ng-if="section.section.in_a_row &amp;&amp; !$ctrl.onlySocialFieldsInSection(section)" class="ng-scope">
+                                                      <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      <td ng-attr-style="{{$ctrl.tdStyle(section.fields[0])}}" style="border-collapse:collapse;font-family:Gadget, Arial Black, sans-serif;font-size:27.0px;font-style:normal;line-height:29px;font-weight:700;padding: 0px !important;">
+                                                        <!-- font-size and line-height must be used here to add spaces between spans. -->
+                                                        <!-- TEXT & IMAGE FIELDS -->
+                                                        <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink --><span ng-if="field.category == 'text' &amp;&amp; !field.hyperlink" ng-attr-style="{{$ctrl.spanStyle(field)}}" class="ng-binding ng-scope" style="font-family:Gadget, Arial Black, sans-serif;font-size:27.0px;font-style:normal;line-height:29px;font-weight:700;color:#218aa6;display:inline;">Dabobroto saha&nbsp;</span><!-- end ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink --><span ng-if="field.category == 'text' &amp;&amp; !field.hyperlink" ng-attr-style="{{$ctrl.spanStyle(field)}}" class="ng-binding ng-scope" style="font-family:Gadget, Arial Black, sans-serif;font-size:16.0px;font-style:italic;line-height:18px;font-weight:700;color:#333333;display:inline;">Web Design Specialist&nbsp;</span><!-- end ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) -->
+                                                    <!-- section bottom padding -->
+                                                    <!-- ngIf: section.section.border_padding > 0 --><tr ng-if="section.section.border_padding > 0" ng-click="$ctrl.goToSection(section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                      <td ng-attr-style="{{$ctrl.tdSectionStyle(section.section, 'padding')}}" style="border-collapse:collapse;padding-bottom:2px;height:2px;">
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.border_padding > 0 -->
+                                                    <!-- section bottom border -->
+                                                    <!-- ngIf: section.section.border_width > 0 --><tr ng-if="section.section.border_width > 0" ng-click="$ctrl.goToSection(section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                      <td ng-attr-style="{{$ctrl.tdSectionStyle(section.section, 'border')}}" style="border-collapse:collapse;background-color:#333333;height:4px;padding: 0px !important;">
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.border_width > 0 -->
+                                                    <!-- section bottom margin -->
+                                                    <!-- ngIf: section.section.border_margin > 0 && section.section.border_width > 0 --><tr ng-if="section.section.border_margin > 0 &amp;&amp; section.section.border_width > 0" ng-click="$ctrl.goToSection(section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                      <td ng-attr-style="{{$ctrl.tdSectionStyle(section.section, 'margin')}}" style="border-collapse:collapse;padding-bottom:7px;height:7px;">
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.border_margin > 0 && section.section.border_width > 0 -->
+                                                  </tbody>
+                                                </table><!-- end ngIf: $ctrl.sectionIsntSpacer(section) -->
+                                              </td><!-- end ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections -->
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr><!-- end ngRepeat: row in table.rows --><tr ng-repeat="row in table.rows" class="ng-scope">
+                                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                        <!-- EACH ROW -->
+                                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                          <tbody>
+                                            <tr>
+                                              <!-- EACH SECTION and vertical section borders -->
+                                              <!-- ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><td ng-repeat="section in row.sections" ng-attr-style="{{$ctrl.tdStyle(section)}}" ng-if="$ctrl.showSection(section)" ng-mouseover="$ctrl.highlightSectionSpacer(section)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'section' + section.style.section_area)}" ng-click="$ctrl.goToVerticalSection(section)" class="ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+                                                <!-- ngIf: $ctrl.sectionIsntSpacer(section) --><table ng-attr-style="{{$ctrl.tableStyle()}}" ng-if="$ctrl.sectionIsntSpacer(section)" border="0" cellpadding="0" cellspacing="0" class="ng-scope" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                                  <tbody>
+                                                    <!-- EACH FIELD in vertical sections and horizontal field borders -->
+                                                    <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                    <!-- TEXT & SOCIAL FIELDS in horizontal sections -->
+                                                    <!-- ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) --><tr ng-if="section.section.in_a_row &amp;&amp; !$ctrl.onlySocialFieldsInSection(section)" class="ng-scope">
+                                                      <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      <td ng-attr-style="{{$ctrl.tdStyle(section.fields[0])}}" style="border-collapse:collapse;font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;padding: 0px !important;">
+                                                        <!-- font-size and line-height must be used here to add spaces between spans. -->
+                                                        <!-- TEXT & IMAGE FIELDS -->
+                                                        <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible --><span ng-if="field.tag &amp;&amp; field.tag.style.visible" ng-attr-style="{{$ctrl.spanStyle(field.tag)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#218aa6;display:inline;">P</span><!-- end ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink --><span ng-if="field.category == 'text' &amp;&amp; !field.hyperlink" ng-attr-style="{{$ctrl.spanStyle(field)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#333333;display:inline;">+8801705840558&nbsp;</span><!-- end ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible --><span ng-if="field.tag &amp;&amp; field.tag.style.visible" ng-attr-style="{{$ctrl.spanStyle(field.tag)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#218aa6;display:inline;"> M</span><!-- end ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink --><span ng-if="field.category == 'text' &amp;&amp; !field.hyperlink" ng-attr-style="{{$ctrl.spanStyle(field)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#333333;display:inline;">+8801742557725&nbsp;</span><!-- end ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) -->
+                                                    <!-- section bottom padding -->
+                                                    <!-- ngIf: section.section.border_padding > 0 -->
+                                                    <!-- section bottom border -->
+                                                    <!-- ngIf: section.section.border_width > 0 -->
+                                                    <!-- section bottom margin -->
+                                                    <!-- ngIf: section.section.border_margin > 0 && section.section.border_width > 0 -->
+                                                  </tbody>
+                                                </table><!-- end ngIf: $ctrl.sectionIsntSpacer(section) -->
+                                              </td><!-- end ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections -->
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr><!-- end ngRepeat: row in table.rows --><tr ng-repeat="row in table.rows" class="ng-scope">
+                                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                        <!-- EACH ROW -->
+                                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                          <tbody>
+                                            <tr>
+                                              <!-- EACH SECTION and vertical section borders -->
+                                              <!-- ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><td ng-repeat="section in row.sections" ng-attr-style="{{$ctrl.tdStyle(section)}}" ng-if="$ctrl.showSection(section)" ng-mouseover="$ctrl.highlightSectionSpacer(section)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'section' + section.style.section_area)}" ng-click="$ctrl.goToVerticalSection(section)" class="ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+                                                <!-- ngIf: $ctrl.sectionIsntSpacer(section) --><table ng-attr-style="{{$ctrl.tableStyle()}}" ng-if="$ctrl.sectionIsntSpacer(section)" border="0" cellpadding="0" cellspacing="0" class="ng-scope" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                                  <tbody>
+                                                    <!-- EACH FIELD in vertical sections and horizontal field borders -->
+                                                    <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                    <!-- TEXT & SOCIAL FIELDS in horizontal sections -->
+                                                    <!-- ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) --><tr ng-if="section.section.in_a_row &amp;&amp; !$ctrl.onlySocialFieldsInSection(section)" class="ng-scope">
+                                                      <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      <td ng-attr-style="{{$ctrl.tdStyle(section.fields[0])}}" style="border-collapse:collapse;font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;padding: 0px !important;">
+                                                        <!-- font-size and line-height must be used here to add spaces between spans. -->
+                                                        <!-- TEXT & IMAGE FIELDS -->
+                                                        <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible --><span ng-if="field.tag &amp;&amp; field.tag.style.visible" ng-attr-style="{{$ctrl.spanStyle(field.tag)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#218aa6;display:inline;">W</span><!-- end ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink --><span ng-if="field.category == 'text' &amp;&amp; !field.hyperlink" ng-attr-style="{{$ctrl.spanStyle(field)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#333333;display:inline;">www.dabobroto.xyz&nbsp;</span><!-- end ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible --><span ng-if="field.tag &amp;&amp; field.tag.style.visible" ng-attr-style="{{$ctrl.spanStyle(field.tag)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#218aa6;display:inline;"> E</span><!-- end ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink --><span ng-if="field.category == 'text' &amp;&amp; !field.hyperlink" ng-attr-style="{{$ctrl.spanStyle(field)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#333333;display:inline;">dabobrotosaha@gmail.com&nbsp;</span><!-- end ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><zs-remove ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInRow(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- text without hyperlink-->
+                                                          <!-- ngIf: field.category == 'text' && !field.hyperlink -->
+                                                          <!-- text with hyperlink -->
+                                                          <!-- ngIf: field.category == 'text' && field.hyperlink -->
+                                                          <!-- image without hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && !field.hyperlink -->
+                                                          <!-- image with hyperlink -->
+                                                          <!-- ngIf: field.category == 'image' && field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) -->
+                                                    <!-- section bottom padding -->
+                                                    <!-- ngIf: section.section.border_padding > 0 -->
+                                                    <!-- section bottom border -->
+                                                    <!-- ngIf: section.section.border_width > 0 -->
+                                                    <!-- section bottom margin -->
+                                                    <!-- ngIf: section.section.border_margin > 0 && section.section.border_width > 0 -->
+                                                  </tbody>
+                                                </table><!-- end ngIf: $ctrl.sectionIsntSpacer(section) -->
+                                              </td><!-- end ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections -->
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr><!-- end ngRepeat: row in table.rows --><tr ng-repeat="row in table.rows" class="ng-scope">
+                                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                        <!-- EACH ROW -->
+                                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                          <tbody>
+                                            <tr>
+                                              <!-- EACH SECTION and vertical section borders -->
+                                              <!-- ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><td ng-repeat="section in row.sections" ng-attr-style="{{$ctrl.tdStyle(section)}}" ng-if="$ctrl.showSection(section)" ng-mouseover="$ctrl.highlightSectionSpacer(section)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'section' + section.style.section_area)}" ng-click="$ctrl.goToVerticalSection(section)" class="ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+                                                <!-- ngIf: $ctrl.sectionIsntSpacer(section) --><table ng-attr-style="{{$ctrl.tableStyle()}}" ng-if="$ctrl.sectionIsntSpacer(section)" border="0" cellpadding="0" cellspacing="0" class="ng-scope" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                                  <tbody>
+                                                    <!-- EACH FIELD in vertical sections and horizontal field borders -->
+                                                    <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><tr ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showFieldInColumn(section, field)" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="">
+                                                      <td ng-attr-style="{{$ctrl.tdStyle(field)}}" style="border-collapse:collapse;font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;padding: 0px !important;">
+                                                        <!-- TEXT FIELDS -->
+                                                        <!-- ngIf: field.category == 'text' || field.category == 'tag' --><zs-remove ng-if="field.category == 'text' || field.category == 'tag'" class="ng-scope">
+                                                          <!-- with tag -->
+                                                          <!-- ngIf: field.tag && field.tag.style.visible --><span ng-if="field.tag &amp;&amp; field.tag.style.visible" ng-attr-style="{{$ctrl.spanStyle(field.tag)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#218aa6;display:inline;">A</span><!-- end ngIf: field.tag && field.tag.style.visible -->
+                                                          <!-- without hyperlink-->
+                                                          <!-- ngIf: !field.hyperlink --><span ng-if="!field.hyperlink" ng-attr-style="{{$ctrl.spanStyle(field)}}" class="ng-binding ng-scope" style="font-family:Calibri, Helvetica, sans-serif;font-size:16.0px;font-style:normal;line-height:18px;font-weight:400;color:#333333;display:inline;">Rajshahi, Natore,Bangladesh</span><!-- end ngIf: !field.hyperlink -->
+                                                          <!-- with hyperlink -->
+                                                          <!-- ngIf: field.hyperlink -->
+                                                        </zs-remove><!-- end ngIf: field.category == 'text' || field.category == 'tag' -->
+                                                        <!-- IMAGE FIELDS -->
+                                                        <!-- ngIf: field.category == 'image' -->
+                                                        <!-- SOCIAL FIELDS -->
+                                                        <!-- ngIf: $ctrl.showSocialField(field)  -->
+                                                      </td>
+                                                    </tr><!-- end ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                    <!-- TEXT & SOCIAL FIELDS in horizontal sections -->
+                                                    <!-- ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) -->
+                                                    <!-- section bottom padding -->
+                                                    <!-- ngIf: section.section.border_padding > 0 --><tr ng-if="section.section.border_padding > 0" ng-click="$ctrl.goToSection(section)" class="zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0">
+                                                      <td ng-attr-style="{{$ctrl.tdSectionStyle(section.section, 'padding')}}" style="border-collapse:collapse;padding-bottom:5px;height:5px;">
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.border_padding > 0 -->
+                                                    <!-- section bottom border -->
+                                                    <!-- ngIf: section.section.border_width > 0 -->
+                                                    <!-- section bottom margin -->
+                                                    <!-- ngIf: section.section.border_margin > 0 && section.section.border_width > 0 -->
+                                                  </tbody>
+                                                </table><!-- end ngIf: $ctrl.sectionIsntSpacer(section) -->
+                                              </td><!-- end ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections -->
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr><!-- end ngRepeat: row in table.rows --><tr ng-repeat="row in table.rows" class="ng-scope">
+                                      <td ng-attr-style="{{$ctrl.defaultTDpadding}}" style="padding: 0px !important;">
+                                        <!-- EACH ROW -->
+                                        <table ng-attr-style="{{$ctrl.tableStyle()}}" border="0" cellpadding="0" cellspacing="0" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                          <tbody>
+                                            <tr>
+                                              <!-- EACH SECTION and vertical section borders -->
+                                              <!-- ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><td ng-repeat="section in row.sections" ng-attr-style="{{$ctrl.tdStyle(section)}}" ng-if="$ctrl.showSection(section)" ng-mouseover="$ctrl.highlightSectionSpacer(section)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'section' + section.style.section_area)}" ng-click="$ctrl.goToVerticalSection(section)" class="ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+                                                <!-- ngIf: $ctrl.sectionIsntSpacer(section) --><table ng-attr-style="{{$ctrl.tableStyle()}}" ng-if="$ctrl.sectionIsntSpacer(section)" border="0" cellpadding="0" cellspacing="0" class="ng-scope" style="font-family:Arial,Helvetica,sans-serif;line-height:0px;font-size:1px;padding:0px!important;border-spacing:0px;margin:0px;border-collapse:collapse;">
+                                                  <tbody>
+                                                    <!-- EACH FIELD in vertical sections and horizontal field borders -->
+                                                    <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInColumn(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                    <!-- TEXT & SOCIAL FIELDS in horizontal sections -->
+                                                    <!-- ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) --><tr ng-if="section.section.in_a_row &amp;&amp; !$ctrl.onlySocialFieldsInSection(section)" class="ng-scope">
+                                                      <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><td ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showHorizontalTextField(field, section)" ng-attr-style="{{$ctrl.tdStyle(field, 'vertical')}}" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="s zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+      
+      
+                                                        <!-- added by gordan - actually just modified-->
+                                                        <!-- without hyperlink -->
+                                                        <!-- ngIf: !field.hyperlink && $ctrl.showSocialField(field) --><img ng-if="!field.hyperlink &amp;&amp; $ctrl.showSocialField(field)" ng-src="https://img1.gimm.io/assets/social/96/333333/3/facebook.png" height="24" width="24" alt="facebook" border="0" class="ng-scope" src="https://img1.gimm.io/assets/social/96/333333/3/facebook.png"><!-- end ngIf: !field.hyperlink && $ctrl.showSocialField(field) -->
+      
+      
+                                                        <!-- social with hyperlink -->
+                                                        <!-- ngIf: field.hyperlink && $ctrl.showSocialField(field) -->
+                                                      </td><!-- end ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><td ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showHorizontalTextField(field, section)" ng-attr-style="{{$ctrl.tdStyle(field, 'vertical')}}" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="s zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="border-collapse:collapse;padding-right:6px;width:6px;">
+      
+      
+                                                        <!-- added by gordan - actually just modified-->
+                                                        <!-- without hyperlink -->
+                                                        <!-- ngIf: !field.hyperlink && $ctrl.showSocialField(field) -->
+      
+      
+                                                        <!-- social with hyperlink -->
+                                                        <!-- ngIf: field.hyperlink && $ctrl.showSocialField(field) -->
+                                                      </td><!-- end ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><td ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showHorizontalTextField(field, section)" ng-attr-style="{{$ctrl.tdStyle(field, 'vertical')}}" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="s zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+      
+      
+                                                        <!-- added by gordan - actually just modified-->
+                                                        <!-- without hyperlink -->
+                                                        <!-- ngIf: !field.hyperlink && $ctrl.showSocialField(field) --><img ng-if="!field.hyperlink &amp;&amp; $ctrl.showSocialField(field)" ng-src="https://img1.gimm.io/assets/social/96/333333/3/twitter.png" height="24" width="24" alt="twitter" border="0" class="ng-scope" src="https://img1.gimm.io/assets/social/96/333333/3/twitter.png"><!-- end ngIf: !field.hyperlink && $ctrl.showSocialField(field) -->
+      
+      
+                                                        <!-- social with hyperlink -->
+                                                        <!-- ngIf: field.hyperlink && $ctrl.showSocialField(field) -->
+                                                      </td><!-- end ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><td ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showHorizontalTextField(field, section)" ng-attr-style="{{$ctrl.tdStyle(field, 'vertical')}}" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="s zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="border-collapse:collapse;padding-right:6px;width:6px;">
+      
+      
+                                                        <!-- added by gordan - actually just modified-->
+                                                        <!-- without hyperlink -->
+                                                        <!-- ngIf: !field.hyperlink && $ctrl.showSocialField(field) -->
+      
+      
+                                                        <!-- social with hyperlink -->
+                                                        <!-- ngIf: field.hyperlink && $ctrl.showSocialField(field) -->
+                                                      </td><!-- end ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><td ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showHorizontalTextField(field, section)" ng-attr-style="{{$ctrl.tdStyle(field, 'vertical')}}" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="s zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+      
+      
+                                                        <!-- added by gordan - actually just modified-->
+                                                        <!-- without hyperlink -->
+                                                        <!-- ngIf: !field.hyperlink && $ctrl.showSocialField(field) --><img ng-if="!field.hyperlink &amp;&amp; $ctrl.showSocialField(field)" ng-src="https://img1.gimm.io/assets/social/96/333333/3/linkedin.png" height="24" width="24" alt="linkedin" border="0" class="ng-scope" src="https://img1.gimm.io/assets/social/96/333333/3/linkedin.png"><!-- end ngIf: !field.hyperlink && $ctrl.showSocialField(field) -->
+      
+      
+                                                        <!-- social with hyperlink -->
+                                                        <!-- ngIf: field.hyperlink && $ctrl.showSocialField(field) -->
+                                                      </td><!-- end ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><td ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showHorizontalTextField(field, section)" ng-attr-style="{{$ctrl.tdStyle(field, 'vertical')}}" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="s zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="border-collapse:collapse;padding-right:6px;width:6px;">
+      
+      
+                                                        <!-- added by gordan - actually just modified-->
+                                                        <!-- without hyperlink -->
+                                                        <!-- ngIf: !field.hyperlink && $ctrl.showSocialField(field) -->
+      
+      
+                                                        <!-- social with hyperlink -->
+                                                        <!-- ngIf: field.hyperlink && $ctrl.showSocialField(field) -->
+                                                      </td><!-- end ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><td ng-repeat="field in section.fields track by $index" ng-if="$ctrl.showHorizontalTextField(field, section)" ng-attr-style="{{$ctrl.tdStyle(field, 'vertical')}}" ng-class="{'zs-preview-highlight':$ctrl.isThingShown('highlighter', 'field' + field.area)}" ng-mouseover="$ctrl.highlightPreviewField(field)" ng-mouseleave="$ctrl.hideThing('highlighter')" ng-click="$ctrl.goToField(field, section)" class="s zs-preview-highlight-on-hover ng-scope" role="button" tabindex="0" style="padding: 0px !important;">
+      
+      
+                                                        <!-- added by gordan - actually just modified-->
+                                                        <!-- without hyperlink -->
+                                                        <!-- ngIf: !field.hyperlink && $ctrl.showSocialField(field) --><img ng-if="!field.hyperlink &amp;&amp; $ctrl.showSocialField(field)" ng-src="https://img1.gimm.io/assets/social/96/333333/3/google-plus.png" height="24" width="24" alt="google-plus" border="0" class="ng-scope" src="https://img1.gimm.io/assets/social/96/333333/3/google-plus.png"><!-- end ngIf: !field.hyperlink && $ctrl.showSocialField(field) -->
+      
+      
+                                                        <!-- social with hyperlink -->
+                                                        <!-- ngIf: field.hyperlink && $ctrl.showSocialField(field) -->
+                                                      </td><!-- end ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showHorizontalTextField(field, section) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      <td ng-attr-style="{{$ctrl.tdStyle(section.fields[0])}}" style="padding: 0px !important;">
+                                                        <!-- font-size and line-height must be used here to add spaces between spans. -->
+                                                        <!-- TEXT & IMAGE FIELDS -->
+                                                        <!-- ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index --><!-- ngIf: $ctrl.showFieldInRow(section, field) --><!-- end ngRepeat: field in section.fields track by $index -->
+                                                      </td>
+                                                    </tr><!-- end ngIf: section.section.in_a_row && !$ctrl.onlySocialFieldsInSection(section) -->
+                                                    <!-- section bottom padding -->
+                                                    <!-- ngIf: section.section.border_padding > 0 -->
+                                                    <!-- section bottom border -->
+                                                    <!-- ngIf: section.section.border_width > 0 -->
+                                                    <!-- section bottom margin -->
+                                                    <!-- ngIf: section.section.border_margin > 0 && section.section.border_width > 0 -->
+                                                  </tbody>
+                                                </table><!-- end ngIf: $ctrl.sectionIsntSpacer(section) -->
+                                              </td><!-- end ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections --><!-- ngIf: $ctrl.showSection(section) --><!-- end ngRepeat: section in row.sections -->
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr><!-- end ngRepeat: row in table.rows -->
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr><!-- end ngRepeat: table in $ctrl.tables -->
+                    <!-- second row below prevents outlook from wordwrapping a signature (when viewing on iPhone - Zendesk ticket 243) - must leave span inside to prevent apple mail macOS inserting a gray background when in dark mode -->
+                    <tr>
+                      <td style="border-collapse:collapse;padding-bottom:8px;height:8px;"><span></span></td>
+                    </tr>
+                    <!-- free signature cta -->
+                    <!-- ngIf: $ctrl.showFreeSigCTA() --><tr ng-if="$ctrl.showFreeSigCTA()" class="ng-scope">
+                      <td style="border-collapse:collapse">
+                        <zs-remove class="zs-preview-highlight-on-hover zs-inline-block" ng-click="$ctrl.goToFreeMessage()" role="button" tabindex="0">
+                          <a href="https://gimm.io/en_US/email-signature-generator?utm_source=sent-emails&amp;utm_medium=email&amp;utm_campaign=get-your-own-signature" target="_blank" rel="nofollow" style="font-family:Arial, Helvetica, sans-serif;font-size:9.0px;font-style:normal;line-height:10px;font-weight:normal;color:#777777;">Get
+                            your own signature</a>
+                        </zs-remove>
+                      </td>
+                    </tr><!-- end ngIf: $ctrl.showFreeSigCTA() -->
+                  </tbody>
+                </table>
+              </div><!-- end ngIf: !$ctrl.isThingShown('loading_preview_cover') -->
+            </div>
+            <!-- ngIf: EMP.showEmptyFields() --><div layout="column" ng-if="EMP.showEmptyFields()" ng-show="$ctrl.showOptionButtons()" class="ng-scope layout-column" aria-hidden="false" style="">
+        <!-- ngIf: EMP.themed --><div class="lay-height-8px ng-scope" ng-if="EMP.themed"></div><!-- end ngIf: EMP.themed -->
+        <div layout="column" class="ra-padding-triple ra-theme-1 layout-column">
+          <!-- ngIf: !EMP.themed  -->
+          <div layout="" class="ra-small-1  layout-align-start-start layout-row" layout-align="start start ">
+            <div class="lay-width-90px zs-gray "></div>
+            <div layout="row " layout-wrap="" class="layout-wrap layout-row">
+              <!-- ngRepeat: field in EMP.fields  --><div class="ra-margin-small-right ra-padding-small bold zs-preview-highlight-on-hover  ng-binding ng-scope" ng-repeat="field in EMP.fields " ng-click="EMP.goToField(field.field_area, field.section_area) " role="button" tabindex="0">
+                
+              </div><!-- end ngRepeat: field in EMP.fields  -->
+            </div>
+          </div>
+          <!-- ngIf: !EMP.themed -->
+        </div>
+      </div><!-- end ngIf: EMP.showEmptyFields() -->
+          </div>
+
+
+
+          <br>
+          <table style="font-size:9pt; font-family:Arial, sans-serif; line-height:17px; width:480px' " width="480" cellpadding="0" cellspacing="0" border="0" class="ng-scope">
+            <tbody><tr>
+             <td style="background-color:#009ee0; padding:10px; width:240px; vertical-align:top;  font-family:Arial, sans-serif; color:#ffffff;" valign="top">
+              <strong><span style="font-size:11pt; font-family:Arial, sans-serif; color:#ffffff;" class="ng-binding">Dabobroto saha</span></strong><br>
+              <!-- ngIf: showField('title') --><span ng-if="showField('title')" style="font-size:9pt; font-family:Arial, sans-serif; color:#ffffff;" class="ng-binding ng-scope">Marketing Director</span><!-- end ngIf: showField('title') -->
+             </td>
+             <td align="right" style="font-size:9pt; font-family:Arial, sans-serif; width:240px; background-color:#4a4a4a; padding:10px; font-size:15px; font-weight:bold; color:#ffffff; vertical-align:middle;" valign="middle">
+              <!-- ngIf: showField('company') --><span ng-if="showField('company')" style="font-family:Arial, sans-serif; color:#ffffff; font-size:9pt;" class="ng-binding ng-scope">My Company</span><!-- end ngIf: showField('company') -->
+             </td>
+            </tr>
+            <tr>
+             <td colspan="2" style="width:480px; padding:10px; background-color:#ededed; vertical-align:top; font-family:Arial, sans-serif; color:#444444;" valign="top">
+              <!-- ngIf: showField('address1') --><span ng-if="showField('address1')" style="font-size:9pt; font-family:Arial, sans-serif; color:#444444;" class="ng-binding ng-scope">Rajshahi<br></span><!-- end ngIf: showField('address1') -->
+              <!-- ngIf: showField('address2') --><span ng-if="showField('address2')" style="font-size:9pt; font-family:Arial, sans-serif; color:#444444;" class="ng-binding ng-scope">Bangladesh<br></span><!-- end ngIf: showField('address2') -->																					
+              <!-- ngIf: showField('email') --><span ng-if="showField('email')" style="font-size:9pt; font-family:Arial, sans-serif; color:#444444;" class="ng-binding ng-scope">mail: john.doe@my-company.com<br></span><!-- end ngIf: showField('email') -->
+              <!-- ngIf: isAnyFieldEntered('mobile, phone') --><span ng-if="isAnyFieldEntered('mobile, phone')" class="ng-scope">
+              <!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')" style="font-size:9pt; font-family:Arial, sans-serif; color:#444444;" class="ng-binding ng-scope">mobile: +8801742557725</span><!-- end ngIf: showField('mobile') -->
+              <!-- ngIf: showField('phone') --><span ng-if="showField('phone')" style="font-size:9pt; font-family:Arial, sans-serif; color:#444444;" class="ng-binding ng-scope"><!-- ngIf: showField('mobile') --><span ng-if="showField('mobile')" style="font-size:9pt; font-family:Arial, sans-serif; color:#444444;" class="ng-scope"> • </span><!-- end ngIf: showField('mobile') -->phone: +8801705840558</span><!-- end ngIf: showField('phone') --><br></span><!-- end ngIf: isAnyFieldEntered('mobile, phone') -->
+              <!-- ngIf: showField('website') --><a ng-if="showField('website')" href="http://www.my-company.com" target="_blank" rel="noopener" style="text-decoration:none;" class="ng-scope"><span style="font-size:9pt; font-family:Arial, sans-serif; color:#008cba;"><span style="font-family:Arial, sans-serif; color:#008cba;" class="ng-binding">www.my-company.com</span></span></a><!-- end ngIf: showField('website') -->
+             </td>
+            </tr>					
+            <!-- ngIf: showField('banner') --><tr ng-if="showField('banner')" class="ng-scope">
+             <td style="width:480px; padding:0px; vertical-align:top" colspan="2" valign="top">   
+              <!-- ngIf: showField('bannerURL') --><a ng-if="showField('bannerURL')" href="https://www.codetwo.com/email-signatures/" target="_blank" rel="noopener" class="ng-scope"><img ng-src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/banner.png" border="0" alt="banner" width="480" style="width:480px; height:auto; border:0;" src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/banner.png"></a><!-- end ngIf: showField('bannerURL') -->   						
+              <!-- ngIf: !showField('bannerURL') -->
+             </td>
+            </tr><!-- end ngIf: showField('banner') -->					
+            <tr>
+             <td colspan="2" height="5" style="width:480px; line-height:5px; vertical-align:top" valign="top">&nbsp;</td>
+            </tr>
+            <tr>
+             <td style="width:480px; padding:0px; text-align:center;" colspan="2" align="center" valign="top">							
+            <!-- ngIf: showField('facebookURL') --><span ng-if="showField('facebookURL')" class="ng-scope"><a href="https://www.facebook.com/MyCompany" target="_blank" rel="noopener"><img border="0" width="35" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/fb.png" alt="facebook icon" style="border:0; height:35px; width:35px;" src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/fb.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('facebookURL') --><!-- ngIf: showField('youtubeURL') --><span ng-if="showField('youtubeURL')" class="ng-scope"><a href="https://www.youtube.com/user/MyCompanyChannel" target="_blank" rel="noopener"><img border="0" width="35" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/yt.png" alt="youtube icon" style="border:0; height:35px; width:35px;" src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/yt.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('youtubeURL') --><!-- ngIf: showField('linkedinURL') --><span ng-if="showField('linkedinURL')" class="ng-scope"><a href="https://www.linkedin.com/company/mycompany404" target="_blank" rel="noopener"><img border="0" width="35" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/ln.png" alt="linkedin icon" style="border:0; height:35px; width:35px;" src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/ln.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('linkedinURL') --><!-- ngIf: showField('twitterURL') --><span ng-if="showField('twitterURL')" class="ng-scope"><a href="https://twitter.com/MyCompany404" target="_blank" rel="noopener"><img border="0" width="35" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/tt.png" alt="twitter icon" style="border:0; height:35px; width:35px;" src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/tt.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('twitterURL') --><!-- ngIf: showField('instagramURL') --><span ng-if="showField('instagramURL')" class="ng-scope"><a href="https://www.instagram.com/mycompany404/" target="_blank" rel="noopener"><img border="0" width="35" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/it.png" alt="instagram icon" style="border:0; height:35px; width:35px;" src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/it.png"></a>&nbsp;&nbsp;</span><!-- end ngIf: showField('instagramURL') --><!-- ngIf: showField('pinterestURL') --><span ng-if="showField('pinterestURL')" class="ng-scope"><a href="https://pinterest.com/mycompany404/" target="_blank" rel="noopener"><img border="0" width="35" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/pt.png" alt="pinterest icon" style="border:0; height:35px; width:35px;" src="https://www.mail-signatures.com/signature-generator/img/templates/signature1/pt.png"></a></span><!-- end ngIf: showField('pinterestURL') -->
+             </td>
+            </tr>
+            <!-- ngIf: showField('disclaimer') --><tr ng-if="showField('disclaimer')" class="ng-scope">
+             <td colspan="2" height="5" style="width:480px; line-height:5px; font-size:5px; vertical-align:top;" valign="top">&nbsp;</td>
+            </tr><!-- end ngIf: showField('disclaimer') -->
+            <!-- ngIf: showField('disclaimer') --><tr ng-if="showField('disclaimer')" class="ng-scope">
+             <td width="480px" style="font-size:6pt; font-family:Arial, sans-serif; color:#444444; line-height:10px; padding-bottom:10px; vertical-align:top; text-align:justify;" colspan="2" valign="top">
+              <span style="font-size:6pt; font-family:Arial, sans-serif; color:#444444;" class="ng-binding">The content of this email is confidential and intended for the recipient specified in message only. It is strictly forbidden to share any part of this message with any third party, without a written consent of the sender. If you received this message by mistake, please reply to this message and follow with its deletion, so that we can ensure such a mistake does not occur in the future.</span>
+             </td>
+            </tr><!-- end ngIf: showField('disclaimer') -->		
+           </tbody></table>
+
+
+
+
+           <br>
+
+           
+          <table style="width: 500px; font-size: 11pt; font-family: Arial, sans-serif;" cellpadding="0" cellspacing="0" border="0" class="ng-scope">
+          <tbody>
+           <tr>
+            <!-- ngIf: showField('logo') --><td ng-if="showField('logo')" width="200" style="font-size: 10pt; font-family: Arial, sans-serif; width: 200px; padding-right: 20px; vertical-align: top;" valign="top" class="ng-scope">
+              <!-- ngIf: showField('logoURL') --><a ng-if="showField('logoURL')" href="https://www.my-company.com/" target="_blank" class="ng-scope"><img border="0" alt="Logo" width="200" style="width:200px; height:auto; border:0;" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/logo.png" src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/logo.png"></a><!-- end ngIf: showField('logoURL') -->
+              <!-- ngIf: !showField('logoURL') -->   
+            </td><!-- end ngIf: showField('logo') -->
+            <!-- ngIf: !showField('logo') -->  
+           
+           <td valign="top" style="vertical-align: top; width:300px;" width="300">
+           
+            <table cellpadding="0" cellspacing="0" width="300" style="width:300px" border="0">
+            <tbody>
+              <!-- ngIf: isAnyFieldEntered('firstName, lastName') --><tr ng-if="isAnyFieldEntered('firstName, lastName')" class="ng-scope">
+                <td style="font-size: 10pt; font-family: Arial, sans-serif; width: 300px; height:40px; vertical-align: top;" valign="top">
+              <strong style="font-family: Arial Black;font-size: 22pt;color:#000000;" class="ng-binding">Aditya Saha</strong>
+              </td>
+              </tr><!-- end ngIf: isAnyFieldEntered('firstName, lastName') --> 
+          
+              <!-- ngIf: showField('title') --><tr ng-if="showField('title')" class="ng-scope">
+                <td style="font-size: 10pt; font-family: Arial, sans-serif; width: 300px; height:30px; vertical-align: top;" valign="top">
+              <span style="text-transform:uppercase; font-family: Arial, sans-serif; font-size:10pt; color:#000000;" class="ng-binding">Front end Devoloper</span>
+                </td>
+              </tr><!-- end ngIf: showField('title') -->
+            
+              <tr>
+                <td style="font-size: 9pt; font-family: Arial, sans-serif; height:105px; vertical-align: top;" valign="top">
+          
+              <table cellpadding="0" cellspacing="0" width="300" style="width:300px">
+                <tbody>
+                  <!-- ngIf: showField('phone') --><tr ng-if="showField('phone')" class="ng-scope">
+                    <td width="80" style="line-height:14px; idth:80px; font-size: 9pt;color:#000000; font-family: Arial, sans-serif;">Phone:</td>
+                    <td style="line-height:14px; "><strong style="font-size: 9pt; font-family: Arial, sans-serif; color:#000000;" class="ng-binding">+8801742557725</strong></td>					
+                  </tr><!-- end ngIf: showField('phone') -->
+                  <!-- ngIf: showField('mobile') --><tr ng-if="showField('mobile')" class="ng-scope">
+                    <td width="80" style="line-height:14px; width:80px; font-size: 9pt;color:#000000; font-family: Arial, sans-serif;">Mobile:</td>				
+                    <td style="line-height:14px; "><strong style="font-size: 9pt; font-family: Arial, sans-serif; color:#000000;" class="ng-binding">+8801705840558</strong></td>
+                  </tr><!-- end ngIf: showField('mobile') -->
+                  <!-- ngIf: showField('email') --><tr ng-if="showField('email')" class="ng-scope">
+                    <td width="80" style="line-height:14px; width:80px; font-size: 9pt;color:#000000; font-family: Arial, sans-serif;">Email:</td>								
+                    <td style="line-height:14px; "><strong style="font-size: 9pt; font-family: Arial, sans-serif; color:#000000;" class="ng-binding">aditya@gmail.com</strong></td>
+                  </tr><!-- end ngIf: showField('email') -->
+                  <!-- ngIf: showField('website') --><tr ng-if="showField('website')" class="ng-scope">
+                    <td width="80" style="line-height:14px; width:80px; font-size: 9pt;color:#000000; font-family: Arial, sans-serif;">Website:</td>								
+                    <td style="line-height:14px; "><a href="http://www.it bari.com" target="_blank" rel="noopener" style="text-decoration:none;"><strong style="font-size: 9pt; font-family: Arial, sans-serif; color:#000000;" class="ng-binding"> www.it bari.com</strong></a></td>
+                  </tr><!-- end ngIf: showField('website') -->
+                  <!-- ngIf: isAnyFieldEntered('company, address1, address2') --><tr ng-if="isAnyFieldEntered('company, address1, address2')" class="ng-scope">
+                    <td width="80" style="line-height:14px; width:80px; font-size: 9pt;color:#000000; font-family: Arial, sans-serif; vertical-align: top;" valign="top">Address:</td>												
+                    <td style="vertical-align: top; line-height:14px;" valign="top">
+                      <!-- ngIf: showField('company') --><strong ng-if="showField('company')" style="font-family: Arial, sans-serif; font-size:9pt; color:#000000;" class="ng-binding ng-scope">IT Bari</strong><!-- end ngIf: showField('company') --><!-- ngIf: showField('address1') --><strong ng-if="showField('address1')" style="font-size: 9pt; font-family: Arial, sans-serif; color: #000000;" class="ng-binding ng-scope"><!-- ngIf: showField('company') --><span ng-if="showField('company')" class="ng-scope">, </span><!-- end ngIf: showField('company') -->Rajshahi</strong><!-- end ngIf: showField('address1') --><!-- ngIf: showField('address2') --><strong ng-if="showField('address2')" style="font-size: 9pt; font-family: Arial, sans-serif; color: #000000;" class="ng-binding ng-scope"><!-- ngIf: isAnyFieldEntered('company', 'address1') --><span ng-if="isAnyFieldEntered('company', 'address1')" class="ng-scope">, </span><!-- end ngIf: isAnyFieldEntered('company', 'address1') -->Natore, Bangladesh</strong><!-- end ngIf: showField('address2') -->
+                    </td>
+                  </tr><!-- end ngIf: isAnyFieldEntered('company, address1, address2') -->
+                </tbody>
+              </table>
+              
+                  
+                </td>
+              </tr>
+              <!-- ngIf: isAnyFieldEntered('facebookURL, twitterURL, youtubeURL, linkedinURL, instagramURL') --><tr ng-if="isAnyFieldEntered('facebookURL, twitterURL, youtubeURL, linkedinURL, instagramURL')" class="ng-scope">
+                <td style="font-size: 10pt; font-family: Arial, sans-serif; padding-bottom: 0px; vertical-align: bottom; height:25px;" valign="bottom">
+                  <!-- ngIf: showField('facebookURL') --><span ng-if="showField('facebookURL')" class="ng-scope"><a href="https://www.facebook.com/MyCompany" target="_blank" rel="noopener"><img border="0" width="19" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/fb.png" alt="facebook icon" style="border:0; height:19px; width:19px" src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/fb.png"></a>&nbsp;</span><!-- end ngIf: showField('facebookURL') --><!-- ngIf: showField('twitterURL') --><span ng-if="showField('twitterURL')" class="ng-scope"><a href="https://twitter.com/MyCompany404" target="_blank" rel="noopener"><img border="0" width="19" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/tt.png" alt="twitter icon" style="border:0; height:19px; width:19px" src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/tt.png"></a>&nbsp;</span><!-- end ngIf: showField('twitterURL') --><!-- ngIf: showField('youtubeURL') --><span ng-if="showField('youtubeURL')" class="ng-scope"><a href="https://www.youtube.com/user/MyCompanyChannel" target="_blank" rel="noopener"><img border="0" width="19" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/yt.png" alt="youtube icon" style="border:0; height:19px; width:19px" src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/yt.png"></a>&nbsp;</span><!-- end ngIf: showField('youtubeURL') --><!-- ngIf: showField('linkedinURL') --><span ng-if="showField('linkedinURL')" class="ng-scope"><a href="https://www.linkedin.com/company/mycompany404" target="_blank" rel="noopener"><img border="0" width="19" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/ln.png" alt="linkedin icon" style="border:0; height:19px; width:19px" src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/ln.png"></a>&nbsp;</span><!-- end ngIf: showField('linkedinURL') --><!-- ngIf: showField('instagramURL') --><span ng-if="showField('instagramURL')" class="ng-scope"><a href="https://www.instagram.com/mycompany404/" target="_blank" rel="noopener"><img border="0" width="19" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/it.png" alt="instagram icon" style="border:0; height:19px; width:19px" src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/it.png"></a>&nbsp;</span><!-- end ngIf: showField('instagramURL') --><!-- ngIf: showField('pinterestURL') --><span ng-if="showField('pinterestURL')" class="ng-scope"><a href="https://pinterest.com/mycompany404/" target="_blank" rel="noopener"><img border="0" width="19" ng-src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/pt.png" alt="pinterest icon" style="border:0; height:19px; width:19px" src="https://www.mail-signatures.com/signature-generator/img/templates/pad-box/pt.png"></a>&nbsp;</span><!-- end ngIf: showField('pinterestURL') -->
+                </td>
+               </tr><!-- end ngIf: isAnyFieldEntered('facebookURL, twitterURL, youtubeURL, linkedinURL, instagramURL') -->
+              
+            </tbody>
+            </table>
+           </td></tr> 
+           <tr>
+            <!-- ngIf: showField('disclaimer') -->
+            </tr>
+          </tbody>
+          </table>
+          
+    
+</body>
+</html>
